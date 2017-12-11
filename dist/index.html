@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nasa photo of the Day</title>
+    <!-- Support unicode characters -->
+    <meta charset="UTF-8"/>
+    <!-- Check for actual screen size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Our minified Style -->
+    <link rel="stylesheet" type="text/css" href="style/screen.min.css"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+
+<body>
+<header id="top">
+    <div class="header__holder">
+        <img class="header__holder__img" src="media/header.jpg" alt="space view">
+        <!--<canvas class="header__holder__canvas" id="circle"></canvas>-->
+        <span class="header__holder__text" id="text"></span>
+        <div class="header__holder__inputcontainer" id="formulier">
+            <form class="forms">
+                <input id="wishButton" class="header__holder__button" type="button" value="send wish"> </input>
+                <input class="header__holder__inputfield" type="text" placeholder="tell me your wish" id="wishText">
+            </form>
+        </div>
+    </div>
+</header>
+
+<section class="first_section">
+    <div class="first_section__header__action">
+        <label class="first_section__action_switch">
+            <input checked type="checkbox" id="open_Curtain">  <!-- eerste toggle button, deze is standaar checked -->
+            <span class="slider round"></span>
+        </label>
+    </div>
+</section>
+
+<main>
+    <div class="curtain">
+        <div class="curtain__wrapper">
+            <span class="curtain__panel--right__text" id="displayWish"></span>
+            <span class="curtain__panel--right__toggleText" id="toggleText"></span>
+            <canvas class="curtain__panel curtain__panel--left" id="left">
+                <!--<img class="curtain__wrapper__panel&#45;&#45;left__img" src="media/spaceLeft.jpg">-->
+            </canvas>
+            <div class="curtain__underneathContent" id="underNeath">
+                <div class="content__holder" id="holder">
+
+                    <div class="holder__toggleSwitch__data">
+                        <span class="holder__toggleSwitch__text">Hide metadata</span>
+                        <label class="toggleSwitch">
+                            <input class="checkbox" type="checkbox" checked>
+                            <span class="slidertoggle roundtoggle"></span>
+                        </label>
+
+                    </div>
+                    <h3 id="apod_title"></h3>
+                    <img id="apod_img_id"/>
+                    <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"
+                            allowfullscreen="allowfullscreen"
+                            mozallowfullscreen="mozallowfullscreen"
+                            msallowfullscreen="msallowfullscreen"
+                            oallowfullscreen="oallowfullscreen"
+                            webkitallowfullscreen="webkitallowfullscreen"></iframe>
+                    <p id="apod_explaination"></p>
+                    <p id="copyright"></p>
+                </div>
+            </div>
+            <canvas class="curtain__panel curtain__panel--right" id="right">
+
+            </canvas>
+        </div>
+
+    </div>
+    <div id="bottom"></div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
+<script src="script/app.min.js"></script>
+<script src="script/data.min.js"></script>
+</body>
+
+</html>

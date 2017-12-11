@@ -1,0 +1,92 @@
+.header__holder{
+  position: fixed;
+  top: 0;
+
+
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  background-color: $nasaBlack;
+}
+
+.header__holder__img{
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 5;
+
+}
+
+.header__holder__text{
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  color: white;
+  font-size: 2em;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
+
+
+.header__holder__inputcontainer{
+  display: none;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  color: white;
+  font-size: 2em;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  min-width: 30%;
+  max-width: 80%;
+
+}
+
+.header__holder__button{
+background-color: white;
+  color: black;
+  flex: 1;
+  opacity: 0.7;
+
+  border: none;
+
+
+}
+
+
+
+
+
+
+.header__holder__inputfield{
+  min-width: 30%;
+  background-color: transparent;
+  color: white;
+  flex: 2;
+
+  border: none;
+  text-align: center;
+
+}
+
+.forms{
+  width: 100%;
+  border: 2px solid white;
+  background-color: transparent;
+
+  display: flex;
+  height: 35px;
+  overflow: hidden;
+
+  margin: 0;
+  margin-right:-2px;
+  font-size: 12px;
+  border-radius: 55px;
+
+}
