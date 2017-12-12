@@ -38,6 +38,9 @@ $(document).ready(function () {
                 else {
                     $("#apod_vid_id").css("display", "none");
                     $("#apod_img_id").attr("src", result.url);
+                    $("#fullImage").attr("href", result.url);
+                    console.log($("#fullImage"));
+
                     card = $("apod_img_id");
                 }
                 console.log("############################");
