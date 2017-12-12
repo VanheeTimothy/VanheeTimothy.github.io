@@ -99,26 +99,7 @@ $(document).ready(function () {
 
     fixTextAndScrollDown();
 
-    function Submitform(elm) {
-        var wens = {wens: elm.val()};
-        elm = elm.val();
-        if (elm != "") {
-            $.ajax({
-                url: "https://dashboardcreate.azurewebsites.net/api/dashboard/addWish",
-                type: 'post',
-                datatype: 'json',
-                success: function (data) {
-                    console.log("###############lalalalalla############");
-                    $(elem).html(data.msg);
 
-                }, data: wens
-            });
-            console.log("form has been sent!")
-        }
-        else {
-            alert("an Empty wish is also a wish!");
-        }
-    }
 
     function postWishes() {
         var wish = $('#wishText').val();
@@ -177,7 +158,7 @@ $(document).ready(function () {
 
         setTimeout(function () {
             $(document).scrollTop($(document).height(), 2000);
-        }, 6000);
+        }, 8000);
 
         // setTimeout(function () {
         displayWish.text($('#wishText').val());
@@ -186,7 +167,7 @@ $(document).ready(function () {
         setTimeout(function () {
             sendToSpace();
 
-        }, 7000);
+        }, 9000);
 
 
     });
